@@ -18,18 +18,18 @@ In this project you will build such a pipeline.
 
 ## Preliminary steps
 ### Fork the Starter kit
-Go to [https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter](https://github.com/udacity/Project-Build-an-ML-Pipeline-Starter)
+Go to [https://github.com/haule687/Data-Analyst-Capstone-Amazon-Products](https://github.com/haule687/Data-Analyst-Capstone-Amazon-Products)
 and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
 repository that is under your control. Now clone the repository locally so you can start working on it:
 
 ```
-git clone https://github.com/[your github username]/Project-Build-an-ML-Pipeline-Starter.git
+git clone https://github.com/[your github username]/Data-Analyst-Capstone-Amazon-Products.git
 ```
 
 and go into the repository:
 
 ```
-cd Project-Build-an-ML-Pipeline-Starter
+cd Data-Analyst-Capstone-Amazon-Products
 ```
 Commit and push to the repository often while you make progress towards the solution. Remember 
 to add meaningful commit messages.
@@ -40,7 +40,7 @@ file provided in the root of the repository and activate it:
 
 ```bash
 > conda env create -f environment.yml
-> conda activate nyc_airbnb_dev
+> conda activate amazon_products
 ```
 
 ### Get API key for Weights and Biases
@@ -57,6 +57,20 @@ You should see a message similar to:
 wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
 ```
 
+
+### Run Jupyter server and kernel inside the conda environment
+Jupyter will complete installed in the conda environment:
+
+```bash
+> conda install jupyter
+> jupyter notebook
+```
+
+if the browser cannot open in wsl, use the ``--no-browser``:
+
+```bash
+>jupyter notebook --no-browser
+```
 
 ### The configuration
 As usual, the parameters controlling the pipeline are defined in the ``config.yaml`` file defined in
