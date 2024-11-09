@@ -13,7 +13,10 @@ dependencies:
   - seaborn
   - pandas
   - git=2.30.2
-  - pip
+  - plotly
+  - pyppeteer
+  - texlive-core
+  - nbconvert
   - pip:
       - wandb==0.13.9
       - textblob
