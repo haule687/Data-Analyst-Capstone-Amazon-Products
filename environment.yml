@@ -22,5 +22,4 @@ dependencies:
       - textblob
       - nltk
       - vaderSentiment
-      - transformers
-      - torch # Required for Hugging Face Transformers
+      - scikit-posthocs
